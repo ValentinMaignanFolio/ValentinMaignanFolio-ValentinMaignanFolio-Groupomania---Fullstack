@@ -1,0 +1,173 @@
+/* CreatePostPage*/
+
+.formPost{
+    width:60%;
+    max-width: 600px;
+    background-color: #313131;
+    border-radius: 15px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:30px;
+    padding-bottom:30px;
+  }
+  
+.formPost a{
+    margin:0px !important;
+}
+  
+.formPost img{
+    max-width: 300px;
+    border-radius: 10px;
+}
+  
+.formPost label{
+    display: block;
+    margin:20px;
+    text-transform: uppercase;
+    color:white;
+    font-weight: 600;
+}
+  
+.formPost span{
+    color:black;
+    text-align: left;
+    display: block;
+    margin:20px;
+    font-weight: 600;
+}
+  
+.formPost input{
+    width:400px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    margin:20px;
+    border-radius: 5px;
+    border:white;
+    background-color: #ed9f9f;
+    color:white;
+    font-size: 15px;
+}
+  
+.formPost p{
+    color: white;
+    font-size: 12px;
+}
+  
+.formPost input::placeholder{
+    font-size:15px;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+  
+.createPostPage{
+    height: auto;
+    min-height: 70vh;
+    width:100%;
+    background-color: #19547b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+}
+  
+.createPostPage a{
+    display: block;
+    font-size: 20px !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-top:50px;
+    transition: all ease 0.8s;
+}
+  
+.createPostPage a:hover{
+    color: black;
+    font-weight: 700;
+}
+  
+.createPostPage button{
+    width:400px;
+    padding:10px;
+    margin:30px;
+    border-radius: 10px;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+  
+.createPostPage button:hover{
+    box-shadow: grey 4px 5px 6px;
+    cursor: pointer;
+}
+  
+  
+  
+#linkBackHome{
+    width:30%;
+    height: auto;
+    padding:50px;
+    display: none;
+    color:white;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    border:#ed9f9f solid 4px;
+    background-color:#313131;
+    border-radius: 10px;
+}
+  
+#linkBackHome:hover{
+    color:#ed9f9f;
+}
+  
+#linkBackHome a{
+    margin-top: 0px;
+}
+  
+#linkBackHome p{
+    margin-top: 20px;
+}
+  
+#linkBackHome .MuiSvgIcon-root{
+    font-size: 60px;
+}
+  
+#linkBackHome .MuiSvgIcon-root:hover{
+    color: #ed9f9f;
+}
+  
+#linkBackHome a:hover{
+    color:#ed9f9f;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .formPost{
+        width:80%;
+    }
+
+    .formPost img{
+        max-height: 200px;
+        max-width: 200px;
+        border-radius: 5px !important;
+    }
+
+    .formPost input{
+        width:80%;
+    }
+
+    .formPost button{
+        width:80%;
+    }
+}

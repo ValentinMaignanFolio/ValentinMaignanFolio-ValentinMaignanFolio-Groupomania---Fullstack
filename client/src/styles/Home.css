@@ -1,0 +1,184 @@
+/*Home page*/
+
+.homePage{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 0px;
+}
+  
+#searchBar, #searchBar2, #searchBar3{
+    margin: .4rem;
+    padding: .4rem;
+    width:90%;
+    font-size: 15px;
+}
+  
+#postsResearch, #profileResearch, #contentResearch{
+    display: none;
+}
+  
+  
+.searchBar{
+    padding:2rem 1rem;
+    width:30%;
+    background-color: #313131;
+    height: auto;
+}
+  
+.searchBar label{
+    display: none;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    font-weight: 700;
+}
+  
+.searchBar button{
+    width:80%;
+}
+  
+#closeResearch{
+    display: none;
+    color:white;
+    margin:10px;
+}
+  
+.search_results{
+    width:100%;
+    word-wrap:break-word;
+}
+  
+.search_result{
+    border: 1px solid #EEE;
+    margin: 2rem 1rem;
+    padding: .4rem;
+    background-color: #ed9f9f;
+    border-radius: 5px;
+    text-align: left;
+    cursor:pointer;
+}
+
+.post-list{
+    width:100%;
+    background-color: #507188;
+}
+ 
+.datePost{
+   display: block;
+   text-align: left;
+   padding:10px;
+   color:white;
+   background-color: rgb(49, 49, 49);
+   width:150px;
+   border-top-right-radius: 50px;
+}
+ 
+.post{
+   width:50%;
+   max-width: 600px;
+   display:flex;
+   flex-direction:column;
+   justify-content: space-between;
+   margin:auto;
+   margin-top: 30px;
+   margin-bottom: 50px;
+   transition: all 0.8s ease;
+   border-radius: 15px;
+}
+ 
+.postText{
+   padding:10px;
+   text-align: left;
+   background-color: white;
+   line-height: 1.3rem;
+   text-align: justify;
+   word-wrap: break-word;
+   cursor: pointer;
+}
+ 
+ 
+.postPicture{
+   width: 100%;
+   background-color: #fafafa;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor:pointer;
+}
+ 
+ 
+.title{
+   padding:10px;
+   background-color: #ed9f9f;
+   text-transform: uppercase;
+   font-weight: 600;
+   color:white;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   border-top-right-radius: 15px;
+   word-wrap:break-word;
+   cursor:pointer;
+}
+ 
+.buttons{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+ 
+.buttons .unlikeBtn{
+   color:white;
+}
+
+.buttons .likeBtn{
+   color:rgb(235, 206, 206);
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 900px) {
+    .homePage{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .searchBar{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        padding:0px;
+    }
+    
+    .searchBar button{
+        width:90%;
+        margin:auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .search_result{
+        margin:auto;
+        margin-bottom: 5px;
+    }
+    
+    #postsResearch, #profileResearch, #contentResearch{
+        overflow: hidden;
+        padding-bottom: 15px;
+    }
+
+    .post-list{
+        width:100%;
+    }
+    
+    .post{
+        width:80%;
+    }
+    
+    .search_result{
+        width:90%;
+    }
+}

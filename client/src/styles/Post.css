@@ -1,0 +1,293 @@
+/*Individual Page Post*/
+
+.postPage{
+    min-height: 100vh;
+    width:100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#19547b;
+}
+  
+.postPage a{
+    display: block;
+    font-size: 20px !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    text-shadow: 2px 2px 2px grey;
+    margin-top:30px;
+    transition: all ease 0.8s;
+}
+  
+.postPage .postPicture{
+    display: flex;
+    flex-direction: column;
+}
+  
+.topPost{
+    width:80%;
+    max-width:600px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin:30px;
+    margin-bottom: 0px;
+    transition: all 0.8s ease;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    word-wrap:break-word;
+}
+  
+  
+.topPost .title{
+    padding:10px;
+    background-color: #ed9f9f;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-top-right-radius: 15px;
+    word-wrap:break-word;
+}
+  
+  
+.topPost .userName{
+    height:40px;
+    padding:15px;
+    background-color: #ed9f9f;
+    text-transform: capitalize;
+    font-weight: 400;
+    color:white;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: left;
+}
+  
+.username{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+  
+.updatePost{
+    width:100%;
+    box-sizing: border-box;
+    display: flex;
+}
+  
+.updatePostPicture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.updatePostPicture #uploadImage{
+    align-items: center;
+}
+  
+#uploadImageView{
+    width:100px !important;
+}
+
+.newtitle, .newpostText{
+    padding:10px;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border:none;
+    background-color: #eceaea;
+    height:auto;
+    width:100%;
+    color:grey;
+}
+  
+.newtitle:focus{
+    border:none;
+}
+  
+  
+.updateBtn{
+    background-color: black;
+    color:white;
+    margin:auto;
+    width:20%;
+    position: right;
+    border-radius: 0px;
+    box-shadow: none !important;
+}
+  
+/*Comments*/
+  
+.bottomPost{
+    width:80%;
+    max-width:600px;
+    display:flex;
+    flex-direction:column;
+    background-color: #ed9f9f;
+    transition: all 0.8s ease;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.deletePost a{
+    margin:0px !important;
+}
+  
+.deletePost .postButtons{
+    font-size: 18px;
+    margin-top: 50px;
+}
+  
+.postBtn-1{
+    background-color: #ed9f9f !important;
+    transition: all 0.5s ease-in-out;
+}
+  
+.postBtn-1:hover{
+    background-color: black !important;
+    color: white;
+}
+  
+.postBtn-2{
+    background-color: black !important;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+  
+.postBtn-2:hover{
+    background-color: #ed9f9f !important;
+    transition: all 0.5s ease-in-out;
+}
+  
+.deletePost{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+  
+.comment{
+    border:#fafafa 2px solid;
+    margin:0px 15px;
+    background-color: #fafafa;
+    height:auto;
+    padding:10px;
+    padding-left: 20px;
+    border-radius:5px;
+    text-align:left;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.bodycomment{
+    width:90%;
+    line-height: 1.2rem;
+    text-align: justify;
+}
+  
+.bodycomment label{
+    font-weight: 600;
+}
+  
+.bodycomment button{
+    padding:5px !important;
+    font-size: 2px !important;
+}
+  
+.bodycomment button:hover{
+    cursor:pointer!important;
+}
+  
+.addComment{
+    border:#fafafa 2px solid;
+    margin:0px 15px;
+    background-color: #ed9f9f;
+    border-radius:5px;
+    text-align:left;
+    display: flex;
+    flex-direction: row;
+}
+  
+.addComment input{
+    height:30px;
+    width:80%;
+    padding-left:20px;
+    border:0px !important;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.addComment input::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px; 
+}
+   
+.addComment button{
+    width:150px;
+    height:30px;
+    background-color: #ed9f9f;
+    color:white;
+    font-weight: 600;
+    padding:0px;
+    margin:auto;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.addComment button:hover{
+    cursor: pointer;
+}
+  
+.send{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.addcomment path{
+    margin-left: 20px;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .updatePostPicture .uploadImage{
+        word-wrap:break-word;
+        width: 90% !important;
+    }
+
+    .bottomPost input{
+        padding-left: 5px;
+        font-size: 12px;
+    }
+
+    .deletePost{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .deletePost .postButtons{
+        margin-top: 20px;
+    }
+
+}
